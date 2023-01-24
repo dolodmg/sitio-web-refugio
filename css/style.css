@@ -1,0 +1,720 @@
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+/* CSS INDEX: RESPONSIVE */
+
+*{
+    margin: 0;
+}
+
+.container-fluid {
+    width: 100%;
+    overflow: hidden;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.celeste{
+    background-color: rgb(212, 230, 244);
+}
+
+.collapse ul li a {
+    color: rgb(33, 26, 116) !important;
+    font-size: 15px;
+}
+
+.collapse ul li a:hover {
+    transform: scale(1.1);
+}
+
+.nav-item {
+    padding-left: 50px;
+}
+
+.navbar-brand .logo {
+    width: 100%;
+}
+
+.navbar .nav-item:not(:last-child) {
+    margin-right: 3px;
+}
+
+.navbar-brand:hover {
+    text-shadow: 0 0 10px rgb(119, 159, 212);
+}
+
+.dropdown-toggle::after {
+     transition: transform 0.15s linear; 
+}
+  
+.show.dropdown .dropdown-toggle::after {
+    transform: translateY(30px);
+}
+  
+.dropdown-menu {
+    margin-top: 0;
+}
+
+#tituloRefugio {
+    font-family: 'Secular One';
+    text-align: center;
+    font-size:40px;
+    font-weight: 700;
+    color: rgb(33, 26, 116); 
+    margin:20px 10px 20px;
+    text-shadow: 0px 8px 9px rgb(172, 170, 168), 0px -2px 1px rgb(212, 230, 244);
+}
+
+.text-justify {
+    font-family: 'Source Sans Pro';
+    text-align: justify;
+    line-height: 20px;
+    margin: 15px 20px 30px;
+}
+
+@media screen and (min-width: 992px) {
+    .text-justify {
+        font-family: 'Source Sans Pro';
+        text-align: justify;
+        line-height: 20px;
+        margin: 15px 100px 30px;
+    }    
+}
+
+@media screen and (min-width: 1200px) {
+    .text-justify {
+        font-family: 'Source Sans Pro';
+        text-align: justify;
+        line-height: 20px;
+        margin: 15px 200px 30px;
+    }    
+}
+
+#tituloAnimales {
+    font-family: 'Secular One';
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    margin: 10px 10px 30px;
+    color: rgb(33, 26, 116);     
+}
+
+.animales {
+    display: flex;
+    flex-direction: row;
+}
+
+.rounded-circle:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(10, 2, 2, 0.5);
+}
+
+.animales figcaption {
+    font-family: 'Source Sans Pro';
+    text-align: center;
+    margin-top: 10px;
+    color:rgb(21, 19, 44);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.animales img {
+    width: 50%;
+}
+
+@media screen and (min-width: 992px){
+    .animales img {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .animales img {
+        width: 40%;
+    }
+}
+
+#colorSecondRow {
+    background-color: rgb(212, 230, 244);
+}
+
+.footer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    font-family: 'Source Sans Pro';
+    overflow: hidden;
+}
+
+.redes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.redes h3 {
+    color: rgb(33, 26, 116);
+    font-size: 15px;
+    font-family: 'Source Sans Pro';
+    font-weight: bolder;
+}
+
+.fa-brands {
+    font-size: 15px;
+    margin-left: 10px;
+    margin-bottom: 3px;
+    color: rgb(33, 26, 116);
+}
+
+.ultima-linea {
+    color: rgb(33, 26, 116);
+    font-size: 15px;
+    align-items: center;
+    text-align: center;
+    padding: 0 10px 0;
+    font-family: 'Source Sans Pro';
+    font-weight: bolder;
+}
+
+@media screen and (max-width: 767px) {
+    .footer-banner.col-sm-12.col-md-5 {
+        width: 100%;
+    }
+    .footer-banner.col-sm-12.col-md-5 img {
+        padding-bottom: 20px;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .redes {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+        padding-top: 40px;
+    }
+    .redes h3 {
+        color: rgb(33, 26, 116);
+        font-size: 25px;
+        font-family: 'Source Sans Pro';
+        font-weight: bolder;
+    }
+    .ultima-linea {
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        justify-content: center;
+        font-family: 'Source Sans Pro';
+        font-weight: bolder;
+    }
+    .fa-brands {
+        font-size: 25px;
+        margin-left: 10px;
+        margin-top: 3px;
+        color: rgb(33, 26, 116);
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .redes {
+        display: flex;
+        flex-direction: row;
+    }
+    .redes h3 {
+        color: rgb(33, 26, 116);
+        font-size: 25px;
+        font-family: 'Source Sans Pro';
+        font-weight: bolder;
+    }
+    .ultima-linea {
+        display: flex;
+        flex-direction: row;
+        font-family: 'Source Sans Pro';
+        font-weight: bolder;
+    }
+    .fa-brands {
+        font-size: 25px;
+        margin-left: 10px;
+        margin-top: 3px;
+        color: rgb(33, 26, 116);
+    }
+    .infoTotal {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 40px;
+    }
+    .footer-banner.col-sm-12.col-md-5 img {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        padding-bottom: 20px;
+    }
+}
+
+.navbar .nav-item:not(:last-child) {
+    margin-right: 3px;
+}
+
+.navbar-nav li a {
+    color: rgb(33, 26, 116) !important;
+    font-weight:bold;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.navbar-brand:hover {
+    text-shadow: 0 0 10px rgb(119, 159, 212);
+}
+
+
+.dropdown-toggle::after {
+     transition: transform 0.15s linear; 
+}
+  
+.show.dropdown .dropdown-toggle::after {
+    transform: translateY(30px);
+}
+  
+.dropdown-menu {
+    margin-top: 0;
+}
+
+/* CSS ADOPCIONES: RESPONSIVE */ 
+
+#bannerAdopciones {
+    width: 100%;
+    overflow: hidden;
+}
+
+.caja-container {
+    background-color: rgb(212, 230, 244);
+}
+
+.caja-total {
+    margin: 10px 50px 10px;
+}
+
+.titulosAdoptar {
+    font-family: 'Secular One';
+    font-weight: bold;
+    font-size: 25px;
+    color: rgb(33, 26, 116);
+    padding: 8px 10px 0;
+    background-color: rgb(212, 230, 244);
+}
+
+.info-especifica {
+    font-family: 'Source Sans Pro';
+    font-size: 15px;
+    text-align: justify;
+    margin-left: -15px;
+    color: rgb(33, 26, 116);
+    line-height: 25px;
+    padding-top: 15px;
+}
+
+.botonAnimal.btn.btn-primary {
+    background-color: rgb(33, 26, 116);
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.botonAnimal.btn.btn-primary:hover {
+    color:rgb(33, 26, 116);
+    background-color: rgb(212, 230, 244);
+    box-shadow: 0 4px 16px rgb(100, 102, 102);
+    transition: all 0.2s ease;
+  }
+  
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .caja-total {
+        margin: 20px 200px 20px;
+    }
+    .titulosAdoptar {
+        font-family: 'Secular One';
+        font-weight: bold;
+        font-size: 25px;
+        color: rgb(33, 26, 116);
+        padding: 8px 10px 0;
+        background-color: rgb(212, 230, 244);
+    }
+    .info-especifica {
+        font-family: 'Source Sans Pro';
+        font-size: 15px;
+        text-align: justify;
+        margin-left: -15px;
+        color: rgb(33, 26, 116);
+        line-height: 25px;
+        padding-top: 15px;
+    }
+    .botonAnimal.btn.btn-primary {
+        background-color: rgb(33, 26, 116);
+        border: none;
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
+}
+
+/* CSS CONTACTO */
+
+#imagenGato {
+    width: 100%;
+    display: block;
+}
+
+#contactoTitulo {
+    font-family: 'Secular One';
+    display: flex;
+    justify-content: center;
+    color: rgb(33, 26, 116);
+    padding-top: 20px;
+    background-color: rgb(240, 240, 241);
+}
+
+.contactoFormas {
+    font-family: 'Source Sans Pro';
+    color: rgb(33, 26, 116);
+    font-size: 20px;
+    padding: 20px 350px 0;
+    line-height: 30px;
+    background-color: rgb(240, 240, 241);
+}
+
+#formulario {
+    font-family: 'Source Sans Pro';
+    display: flex;
+    flex-direction: column;
+    padding: 20px 350px 50px;
+    background-color: rgb(240, 240, 241);
+}
+
+.etiqueta {
+    margin: 5px 0 5px;
+    color: rgb(33, 26, 116);
+}
+
+.contenidoInput {
+    padding: 5px 10px 5px;
+    border-color: rgb(33, 26, 116);
+    border-radius: 5px;
+    border-width: 2px;
+}
+
+.textoMensaje {
+    padding: 5px 10px 50px;
+    margin-bottom: 10px;
+    border-color: rgb(33, 26, 116);
+    border-radius: 5px;
+    border-width: 2px;
+}
+
+#enviar {
+    font-family: 'Source Sans Pro';
+    margin-left: 130px;
+    margin-right: 130px;
+    font-size: 15px;
+    padding: 5px 0 8px;
+    background-color: rgb(33, 26, 116);
+    color: rgb(212, 230, 244);
+    border:none;
+    border-radius: 20px;
+}
+
+#enviar:hover {
+    color:rgb(33, 26, 116);
+    background-color: rgb(212, 230, 244);
+    box-shadow: 0 4px 16px rgb(100, 102, 102);
+    transition: all 0.2s ease; 
+}
+
+/* CSS NOSOTROS */
+
+.bodyNosotros {
+    background-color: rgb(240, 240, 241);
+}
+
+#primerFoto {
+    width: 350px;
+    height: 450px;
+    margin-left: 250px;
+    margin-top: 60px;
+}
+
+.imagen-historia {
+    display: flex;
+    flex-direction: row;
+}
+
+.nosotrosPrimerTercerParrafo {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    margin-left: 50px;
+    margin-top: 40px;
+}
+
+.nosotrosSubtitulo {
+    font-family: 'Secular One';
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(33, 26, 116);
+    margin-top: 10px;
+}
+
+.nosotrosInfo {
+    font-family: 'Source Sans Pro';
+    margin-right: 250px;
+    margin-top: 20px;
+    line-height: 28px;
+    color: rgb(33, 26, 116);
+    font-size: 18px;
+}
+
+.imagen-acciones {
+    display: flex;
+    flex-direction: row;
+}
+
+.nosotrosSegundoParrafo {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    margin-left: 250px;
+    margin-right: 50px;
+    margin-top: 40px;
+}
+
+.nosotrosSubtituloSegundo {
+    font-family: 'Secular One';
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(33, 26, 116);
+    margin-top: 10px;
+}
+
+.nosotrosInfoSegundo {
+    font-family: 'Source Sans Pro';
+    margin-top: 20px;
+    line-height: 28px;
+    color: rgb(33, 26, 116);
+    font-size: 18px;
+}
+
+#segundaFoto {
+    width: 350px;
+    height: 450px;
+    margin-right: 250px;
+    margin-top: 60px;
+}
+
+#tercerFoto {
+    width: 350px;
+    height: 450px;
+    margin-left: 250px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+    
+
+.imagen-cifras {
+    display: flex;
+    flex-direction: row;
+}
+
+.listaNosotros {
+    list-style-type: none;   
+}
+
+.listaRenglon {
+    padding-left: 30px;
+    background-image: url(../img/huella.png);
+    background-position: 0 4px;
+    background-size: 18px;
+    line-height: 30px;
+    background-repeat: no-repeat;
+}
+
+/* CSS PERROS Y GATOS */
+
+.primerRenglon {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.tituloPerrosGatos {
+    font-family: 'Secular One';
+    margin-left: 40px;
+    margin-top: 15px;
+    color: rgb(33, 26, 116);
+    font-size: 35px;
+}
+
+.botonPerrosGatos {
+    color: rgb(212, 230, 244);
+    background-color:rgb(33, 26, 116);
+    margin: 10px 110px 20px;
+    padding: 14px 16px 14px;
+    border-radius: 100px;
+    font-size: 18px;
+    font-weight: bold;
+    border: 0px;
+}
+
+.botonPerrosGatos:hover {
+    color:rgb(33, 26, 116);
+    background-color: rgb(212, 230, 244);
+    box-shadow: 0 4px 16px rgb(100, 102, 102);
+    transition: all 0.2s ease;
+}
+
+.columna::after {
+    clear: both;
+    display: table;
+}
+
+.polaroid {
+    width: 330px;
+    height: 370px;
+    padding: 20px 15px 410px;
+    margin: 50px 50px 30px;
+    background-color: rgb(241, 239, 239);
+    text-align: center;
+    box-shadow: 0 3px 6px rgb(102, 102, 102);
+    float:left;
+}
+
+.polaroid:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.polaroid img {
+    width: 300px;
+    height: 300px;
+}
+
+.nombrePerroGato {
+    font-family: 'Secular One';
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    color: rgb(21, 19, 44);
+}
+
+.textoPolaroid {
+    font-family: 'Source Sans Pro';
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: rgb(21, 19, 44);
+}
+
+.filaFooter {
+    float: left;
+    background-color: rgb(212, 230, 244);  
+    width: 100%;  
+}
+
+/* CSS AYUDAR */
+
+#bannerAyudar {
+    width: 100%;
+    display: block;
+}
+
+#ayudarH1 {
+    font-family: 'Secular One';
+    text-align: center;
+    margin: 10px 0px 20px;
+    color: rgb(33, 26, 116);
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.titulosAyudar {
+    font-family: 'Secular One';
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(33, 26, 116);
+}
+
+.filaAyudar { 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.ayudarImagen {
+    position: relative;
+    overflow: hidden;
+    margin: 20px 100px 30px;
+    width: 350px;
+    height: 400px;
+    color: rgb(21, 19, 44);
+    line-height: 1.4em;
+    font-size: 16px;
+}
+
+.ayudarImagen * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+}
+
+.ayudarImagen img {
+    max-width: 100%;
+}
+
+.ayudarImagen figcaption {
+    font-family: 'Source Sans Pro';
+    position: absolute;
+    top: calc(90%);
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    padding: 15px 25px 20px;
+}
+
+.ayudarImagen figcaption:before {
+    position: absolute;
+    content: '';
+    bottom: 100%;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-image: -webkit-linear-gradient(top, transparent 0%, rgb(255, 255, 255) 100% );
+    background-image: linear-gradient(to bottom, transparent 0%, rgb(255, 255, 255) 100%);
+}
+
+.ayudarImagen h2,
+.ayudarImagen p {
+    margin: 0 0 10px;
+}
+.ayudarImagen h2 {
+    font-weight: bold;
+    text-align: center;
+    font-size: 25px;
+    line-height: 25px;
+    color: rgb(33, 26, 116);
+}
+.ayudarImagen p {
+    font-size:15px;
+    opacity: 0.9;
+    text-align: justify;
+}
+
+.ayudarImagen:hover figcaption,
+.ayudarImagen.hover figcaption {
+    top: 60px;
+}
+
