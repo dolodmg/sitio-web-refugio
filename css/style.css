@@ -363,6 +363,10 @@
 
 /* CSS CONTACTO */
 
+.gris {
+    background-color: rgb(240, 240, 241);
+}
+
 #imagenGato {
     width: 100%;
     display: block;
