@@ -40,32 +40,34 @@
                 </div>
             </nav> 
         </div>
-        <img src="../img/gatitoBanner.png" alt="Contactate con nosotros" id="imagenGato">
-        <h1 id="contactoTitulo">CONTACTATE CON NOSOTROS</h1>
-        <div class="contactoFormas">
-            <p>Encontranos en Av. 60 y 126, Berisso, prov. de Buenos Aires los lunes a sábados de 10 AM a 18 PM.</p>
-            <p>Envianos un mensaje al 115730-4991.</p>
-            <p>O dejanos tu mensaje:</p>
+        <div class="gris container-fluid">
+            <img src="../img/gatitoBanner.png" alt="Contactate con nosotros" id="imagenGato">
+            <h1 id="contactoTitulo">CONTACTATE CON NOSOTROS</h1>
+            <div class="contactoFormas">
+                <p>Encontranos en Av. 60 y 126, Berisso, prov. de Buenos Aires los lunes a sábados de 10 AM a 18 PM.</p>
+                <p>Envianos un mensaje al 115730-4991.</p>
+                <p>O dejanos tu mensaje:</p>
+            </div>
+            <form action="" id="formulario">
+                <label for="name" class="etiqueta">Nombre completo
+                    <span>*</span>
+                </label>
+                <input type="text" class="contenidoInput" required="obligatorio" placeholder="Nombre">
+                <label for="mail" class="etiqueta">Email
+                    <span>*</span>
+                </label>
+                <input type="text" class="contenidoInput" required="obligatorio" placeholder="Mail">
+                <label for="asunto" class="etiqueta">Asunto
+                    <span>*</span>
+                </label>
+                <input type="text" class="contenidoInput" required="obligatorio" placeholder="Asunto">
+                <label for="mensaje" class="etiqueta">Mensaje
+                    <span>*</span>
+                </label>                     
+                <textarea class="textoMensaje" required="obligatorio" placeholder="Deja tu consulta"></textarea> 
+                <button type="submit" name="enviarFormulario" id="enviar">Enviar</button>
+            </form>
         </div>
-        <form action="" id="formulario">
-            <label for="name" class="etiqueta">Nombre completo
-                <span>*</span>
-            </label>
-            <input type="text" class="contenidoInput" required="obligatorio" placeholder="Nombre">
-            <label for="mail" class="etiqueta">Email
-                <span>*</span>
-            </label>
-            <input type="text" class="contenidoInput" required="obligatorio" placeholder="Mail">
-            <label for="asunto" class="etiqueta">Asunto
-                <span>*</span>
-            </label>
-            <input type="text" class="contenidoInput" required="obligatorio" placeholder="Asunto">
-            <label for="mensaje" class="etiqueta">Mensaje
-                <span>*</span>
-            </label>                     
-            <textarea class="textoMensaje" required="obligatorio" placeholder="Deja tu consulta"></textarea> 
-            <button type="submit" name="enviarFormulario" id="enviar">Enviar</button>
-        </form>
         <div class="celeste container-fluid">
             <footer>
                 <div class="row" id="colorSecondRow">
