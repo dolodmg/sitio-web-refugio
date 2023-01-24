@@ -72,24 +72,6 @@
     margin: 15px 20px 30px;
 }
 
-@media screen and (min-width: 992px) {
-    .text-justify {
-        font-family: 'Source Sans Pro';
-        text-align: justify;
-        line-height: 20px;
-        margin: 15px 100px 30px;
-    }    
-}
-
-@media screen and (min-width: 1200px) {
-    .text-justify {
-        font-family: 'Source Sans Pro';
-        text-align: justify;
-        line-height: 20px;
-        margin: 15px 200px 30px;
-    }    
-}
-
 #tituloAnimales {
     font-family: 'Secular One';
     text-align: center;
@@ -120,18 +102,6 @@
 
 .animales img {
     width: 50%;
-}
-
-@media screen and (min-width: 992px){
-    .animales img {
-        width: 50%;
-    }
-}
-
-@media screen and (min-width: 1200px){
-    .animales img {
-        width: 40%;
-    }
 }
 
 #colorSecondRow {
@@ -197,49 +167,39 @@
         padding-top: 40px;
     }
     .redes h3 {
-        color: rgb(33, 26, 116);
         font-size: 25px;
-        font-family: 'Source Sans Pro';
-        font-weight: bolder;
     }
     .ultima-linea {
         display: flex;
         flex-direction: row;
         align-content: center;
         justify-content: center;
-        font-family: 'Source Sans Pro';
-        font-weight: bolder;
     }
     .fa-brands {
         font-size: 25px;
-        margin-left: 10px;
-        margin-top: 3px;
-        color: rgb(33, 26, 116);
     }
 }
 
 @media screen and (min-width: 992px) {
+    .animales img {
+        width: 50%;
+    }
+    .text-justify {
+        margin: 15px 100px 30px;
+    } 
     .redes {
         display: flex;
         flex-direction: row;
     }
     .redes h3 {
-        color: rgb(33, 26, 116);
         font-size: 25px;
-        font-family: 'Source Sans Pro';
-        font-weight: bolder;
     }
     .ultima-linea {
         display: flex;
         flex-direction: row;
-        font-family: 'Source Sans Pro';
-        font-weight: bolder;
     }
     .fa-brands {
         font-size: 25px;
-        margin-left: 10px;
-        margin-top: 3px;
-        color: rgb(33, 26, 116);
     }
     .infoTotal {
         display: flex;
@@ -254,6 +214,15 @@
         align-content: center;
         padding-bottom: 20px;
     }
+}
+
+@media screen and (min-width: 1200px){
+    .animales img {
+        width: 40%;
+    }
+    .text-justify {
+        margin: 15px 200px 30px;
+    }    
 }
 
 .navbar .nav-item:not(:last-child) {
@@ -330,34 +299,20 @@
     background-color: rgb(212, 230, 244);
     box-shadow: 0 4px 16px rgb(100, 102, 102);
     transition: all 0.2s ease;
-  }
+}
   
 @media screen and (min-width: 768px) and (max-width: 991px) {
     .caja-total {
         margin: 20px 200px 20px;
     }
-    .titulosAdoptar {
-        font-family: 'Secular One';
-        font-weight: bold;
-        font-size: 25px;
-        color: rgb(33, 26, 116);
-        padding: 8px 10px 0;
-        background-color: rgb(212, 230, 244);
+}
+
+@media screen and (min-width: 992px) {
+    .caja-total {
+        margin: 30px 300px 30px;
     }
     .info-especifica {
-        font-family: 'Source Sans Pro';
-        font-size: 15px;
-        text-align: justify;
-        margin-left: -15px;
-        color: rgb(33, 26, 116);
-        line-height: 25px;
-        padding-top: 15px;
-    }
-    .botonAnimal.btn.btn-primary {
-        background-color: rgb(33, 26, 116);
-        border: none;
-        border-radius: 10px;
-        margin-bottom: 20px;
+        padding-top: 25px;
     }
 }
 
