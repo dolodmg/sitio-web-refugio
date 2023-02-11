@@ -1,0 +1,125 @@
+// page nosotros
+
+.first-row {
+    display: flex;
+    @include small {
+        margin-top: 20px;
+    }
+    @media (min-width: 768px) and (max-width: 1200px) {
+        margin: 50px 50px 0;
+    }
+    @include x-large {
+        margin-top: 50px;
+    }
+}
+
+.second-row {
+    @extend .first-row;
+    @include x-large {
+        margin-right: 100px;
+    }
+}
+
+.third-row {
+    @extend .first-row;
+    margin-bottom: 40px;
+    @include small {
+        margin-bottom: 10px;
+    }
+
+}
+
+.primer-foto {
+    @include small {
+        width: 60%;
+    }
+    @include x-large {
+        width: 70%;
+    }
+}
+
+.segunda-foto {
+    @extend .primer-foto;
+}
+
+.tercer-foto {
+    @extend .primer-foto;
+}
+
+%parrafos{
+    text-align: justify;
+    font-family: $tipografia-gen;
+    color: $azul;
+}
+
+%parrafos-h2{
+    font-family: $tipografia-titulo;
+    font-weight: bold;
+    color: $azul;
+}
+
+
+.parrafo-1 {
+    @extend %parrafos;
+    font-size: 20px;
+    @include small {
+        font-size: 17px;
+    }
+    @include x-large {
+        padding-right: 200px;
+    }
+    p {
+        @include small {
+            margin: 0 20px 20px;
+        }
+    }
+    h2 {
+        font-size: 35px;
+        @extend %parrafos-h2;
+        @include small {
+            font-size: 30px;
+            margin-top: 10px;
+        }
+    }
+}
+
+.parrafo-2 {
+    @extend %parrafos;
+    font-size: 20px;
+    p {
+        @include small {
+            margin: 0 20px 20px;
+            font-size: 17px;
+        }
+    }
+    h2 {
+        font-size: 35px;
+        @extend %parrafos-h2;
+        @include small {
+            font-size: 30px;
+            margin-top: 10px;
+        }
+    }
+    @include x-large {
+        padding-left: 80px;
+    }
+}
+
+.parrafo-3 {
+    @extend .parrafo-1;
+    ul {
+        padding: 0;
+        list-style-type: none;
+        @include small {
+            margin: 0 20px 20px;
+        }
+        li {
+            background-image: url(../img/huella.png);
+            background-repeat: no-repeat;
+            background-position: 0 4px;
+            background-size: 15px;
+            padding-left: 20px;
+            line-height: 25px;
+        }
+    }
+}

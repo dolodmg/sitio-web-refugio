@@ -1,0 +1,43 @@
+//variables
+
+// breakpoints
+$breakpoint-md: 767px;
+$breakpoint-md-2: 768px;
+$breakpoint-lg: 991px;
+$breakpoint-lg-2: 992px;
+$breakpoint-xl: 1199px;
+$breakpoint-xl-2: 1200px;
+// colores 
+$azul: rgb(33, 26, 116);
+$azul-oscuro: rgb(21, 19, 44);
+$gris-background: rgb(240, 240, 241);
+$celeste:  rgb(212, 230, 244);
+// tipografías
+$tipografia-gen: 'Source Sans Pro';
+$tipografia-titulo: 'Secular One';
+
+// mixins
+
+@mixin small {
+    @media screen and (max-width: 767px) {
+        @content;
+    }
+}
+
+@mixin medium {
+    @media screen and (min-width: 768px) and (max-width: 991px) {
+        @content;
+    }
+}
+
+@mixin large {
+    @media screen and (min-width: 992px) and (max-width: 1199px) {
+        @content;
+    }
+}
+
+@mixin x-large {
+    @media screen and (min-width: 1200px) {
+        @content;
+    }
+}

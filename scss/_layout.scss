@@ -1,0 +1,135 @@
+.container-fluid {
+    width: 100%;
+    overflow: hidden;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.celeste{
+    background-color: $celeste;
+}
+
+%titulos {
+    font-family: 'Secular One';
+    text-align: center;
+    color: $azul;
+}
+
+//nav
+
+.collapse ul li a {
+    color: rgb(33, 26, 116) !important;
+    font-size: 15px;
+    font-weight: bolder;
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+.collapse ul li a:hover {
+    transform: scale(1.1);
+}
+
+.nav-item {
+    padding-left: 50px;
+}
+
+.navbar-brand img {
+    width: 100%;
+}
+
+.navbar .nav-item:not(:last-child) {
+    margin-right: 3px;
+}
+
+.dropdown-toggle::after {
+     transition: transform 0.15s linear; 
+}
+
+// footer 
+
+.footer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    font-family: $tipografia-gen;
+    overflow: hidden;
+}
+
+#colorSecondRow {
+    background-color: $celeste;
+}
+
+
+.footer-banner {
+    img {
+        @include small {
+            padding-bottom: 20px;
+            width: 50%;
+            display: flex;
+            justify-content: center;
+        }
+        @media (min-width: $breakpoint-lg-2) {
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            padding-bottom: 20px;
+        }
+    }
+}
+
+.redes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    h3 {
+        color: $azul;
+        font-size: 15px;
+        font-family: $tipografia-gen;
+        font-weight: bolder;
+        @media (min-width: $breakpoint-md-2) {
+            font-size: 25px;
+        }
+    }
+    @include medium {
+        align-content: center;
+        padding-top: 40px;
+    }
+}
+
+.infoTotal {
+    @media (min-width: $breakpoint-lg-2) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 40px;
+    }
+}
+
+.fa-brands {
+    font-size: 15px;
+    margin-left: 10px;
+    margin-bottom: 3px;
+    color: $azul;
+    @media (min-width: $breakpoint-md-2) {
+        font-size: 25px;
+    }
+}
+
+.ultima-linea {
+    color: $azul;
+    font-size: 15px;
+    align-items: center;
+    text-align: center;
+    padding: 0 10px 0;
+    font-family: $tipografia-gen;
+    font-weight: bolder;
+    @include medium {
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        justify-content: center;
+    }
+}

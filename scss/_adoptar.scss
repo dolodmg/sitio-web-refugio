@@ -1,0 +1,65 @@
+// page adoptar
+#colorSecondRow {
+    background-color: $celeste;
+}
+
+#bannerAdopciones {
+    width: 100%;
+    overflow: hidden;
+}
+
+.caja-total {
+    margin: 10px 50px 10px;
+    @include medium {
+        margin: 20px 200px 20px;
+    }
+    @media (min-width: $breakpoint-lg-2) {
+        margin: 30px 300px 30px;
+    }
+}
+
+%encabezados-adoptar {
+    font-family: $tipografia-titulo;
+    font-weight: bold;
+    font-size: 25px;
+    color: $azul;
+    padding: 8px 10px 8px;
+    background-color: $celeste;
+    @media (max-width: $breakpoint-md) {
+        font-size: 20px;
+    }
+}
+
+.caja-total h1 {
+    @extend %encabezados-adoptar;
+}
+
+.caja-total h2 {
+    @extend %encabezados-adoptar;
+}
+
+.info-especifica {
+    font-family: $tipografia-gen;
+    font-size: 15px;
+    text-align: justify;
+    color: $azul;
+    line-height: 25px;
+    padding-top: 15px;
+    @media (min-width: $breakpoint-lg-2) {
+        padding-top: 25px;
+    }
+}
+
+.botonAnimal {
+    background-color: $azul;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    
+    &:hover {
+        color: $azul;
+        background-color: $celeste;
+        box-shadow: 0 4px 16px rgb(100, 102, 102);
+        transition: all 0.2s ease;
+    }
+}

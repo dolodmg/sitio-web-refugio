@@ -1,0 +1,105 @@
+// page perros y gatos
+
+.primer-renglon {
+    display: flex;
+    flex-direction: row;
+    @include small {
+        flex-direction: column;
+    }
+    @media (min-width: $breakpoint-md-2) {
+        justify-content: space-between;
+    }
+}
+
+.titulo-perros-gatos {
+    @extend %titulos;
+    font-weight: bold;
+    margin-top: 15px;
+    font-size: 35px;
+    @include small {
+        text-align: center;
+        font-size: 25px;
+    }
+    @media (min-width: $breakpoint-md-2) {
+        margin-left: 40px;
+    }
+}
+
+.boton-perros-gatos {
+    color: $celeste;
+    background-color: $azul;
+    font-size: 15px;
+    border: 0px;
+    font-weight: 600;
+    @include small {
+        margin: 10px 60px 10px;
+    }
+    @media (min-width: $breakpoint-md-2) {
+        margin-right: 80px;
+        margin-top: 20px;
+    }
+
+    &:hover {
+        color: $azul;
+        background-color: rgb(212, 230, 244);
+        box-shadow: 0 4px 16px rgb(100, 102, 102);
+        transition: all 0.2s ease;
+    }
+}
+
+.fila-polaroid {
+    @media (min-width: $breakpoint-md-2) {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.polaroid {
+    width: 100%;
+    padding: 20px 0 20px;
+    background-color: rgb(241, 239, 239);
+    text-align: center;
+    box-shadow: 0 3px 6px rgb(102, 102, 102);
+    float:left;
+    @include small {
+        width: 100%;
+        margin: 10px 80px 20px;
+    }
+    @media (min-width: $breakpoint-md-2) {
+        margin: 50px 30px 30px;
+    }
+
+    &:hover {
+        transform: scale(1.1);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+    
+    img {
+        width: 90%;
+    }
+}
+
+%polaroid-text {
+    font-family: $tipografia-titulo;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: $azul-oscuro;
+}
+
+.nombre-perro-gato {
+    @extend %polaroid-text;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.textoPolaroid {
+    @extend %polaroid-text;
+}
+
+.filaFooter {
+    float: left;
+    background-color: $celeste;  
+    width: 100%;  
+}

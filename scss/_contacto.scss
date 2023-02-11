@@ -1,0 +1,124 @@
+// page contacto
+
+#imagenGato {
+    width: 100%;
+    display: block;
+}
+
+#contactoTitulo {
+    @extend %titulos;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    background-color: $gris-background;
+}
+
+.contactoFormas {
+    font-family: $tipografia-gen;
+    color: $azul;
+    font-size: 20px;
+    padding: 20px 350px 0;
+    line-height: 30px;
+    background-color: $gris-background;
+    @media (max-width: $breakpoint-md) {
+        font-size: 18px;
+        padding: 20px 30px 0px;
+    }
+    @include medium {
+        padding: 20px 80px 0px;
+    }
+    @include large {
+        padding: 20px 250px 0px;
+    }
+}
+
+.gris {
+    background-color: $gris-background;
+
+    h1 {
+        font-family: $tipografia-titulo;
+        display: flex;
+        justify-content: center;
+        color: $azul;
+        padding-top: 20px;
+        background-color: $gris-background;
+        @media (max-width: $breakpoint-md) {
+            font-size: 25px;
+            text-align: center;
+        }
+    }
+
+    form {
+        font-family: $tipografia-gen;
+        display: flex;
+        flex-direction: column;
+        padding: 20px 350px 50px;
+        background-color: $gris-background;
+        @media (max-width: $breakpoint-md) {
+            padding: 5px 30px 20px;
+        }
+        @include medium {
+            padding: 5px 80px 20px;
+        }
+        @include large {
+            padding: 5px 250px 20px;
+        }
+    }
+}
+
+.etiqueta {
+    margin: 5px 0 5px;
+    color: $azul;
+}
+
+.contactoFormas {
+    font-family: $tipografia-gen;
+    color: $azul;
+    font-size: 20px;
+    padding: 20px 350px 0;
+    line-height: 30px;
+    background-color: $gris-background;
+    @include small {
+        padding: 20px 30px 0px;
+    }
+    @include medium {
+        padding: 20px 80px 0px;
+    }
+    @include large {
+        padding: 20px 250px 0px;
+    }
+}
+
+%bordes-contacto {
+    border-color: $azul;
+    border-radius: 5px;
+    border-width: 2px;
+}
+
+.contenidoInput {
+    @extend %bordes-contacto;
+    padding: 5px 10px 5px;
+}
+
+.textoMensaje {
+    @extend %bordes-contacto;
+    padding: 5px 10px 50px;
+    margin-bottom: 10px;
+}
+
+.enviar {
+    font-family: $tipografia-gen;
+    font-size: 15px;
+    background-color: $azul;
+    color: $celeste;
+    border: none;
+    border-radius: 20px;
+
+    &:hover {
+        color: $azul;
+        background-color: $celeste;
+        box-shadow: 0 4px 16px rgb(100, 102, 102);
+        transition: all 0.2s ease; 
+    }
+}
