@@ -1,14 +1,29 @@
 .foto-salchicha img {
     width: 80%;
     margin-left: 100px;
+    @include small {
+        width: 60%;
+        text-align: center;
+        margin: auto;
+        overflow: hidden;
+    }
 }
 
 .texto-error {
     margin-top: 40px;
+    @include small {
+        margin: 0;
+        overflow: hidden;
+    }
 }
 
 #encabezado-error {
     @extend %titulos;
+    @include small {
+        margin: 10px 10px 10px;
+        font-size: 25px;
+        overflow: hidden;
+    }
 }
 
 #not-found {
@@ -17,6 +32,11 @@
     font-family: $tipografia-titulo;
     font-size: bolder;
     text-align: center;
+    @include small {
+        margin: 10px 20px 10px;
+        font-size: 20px;
+        overflow: hidden;
+    }
 }
 
 .parrafo-error {
@@ -24,6 +44,11 @@
     font-size: 25px;
     margin: 10px 40px 20px;
     text-align: center;
+    @include small {
+        margin: 10px 10px 10px;
+        font-size: 10px;
+        overflow: hidden;
+    }
 }
 
 .boton-error {
@@ -33,5 +58,8 @@
     border: none;
     &:hover {
         background-color: rgb(255, 13, 114);
+    }
+    @include small {
+        font-size: 10px;
     }
 }
