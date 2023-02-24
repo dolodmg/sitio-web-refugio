@@ -11,7 +11,7 @@
   background-color: rgb(212, 230, 244);
 }
 
-.titulo-perros-gatos, #contactoTitulo, .titulosAyudar, #ayudarH1, #tituloAnimales, #tituloRefugio {
+#encabezado-error, .titulo-perros-gatos, #contactoTitulo, .titulosAyudar, #ayudarH1, #tituloAnimales, #tituloRefugio {
   font-family: "Secular One";
   text-align: center;
   color: rgb(33, 26, 116);
@@ -794,6 +794,40 @@
   background-size: 15px;
   padding-left: 20px;
   line-height: 25px;
+}
+
+.foto-salchicha img {
+  width: 80%;
+  margin-left: 100px;
+}
+
+.texto-error {
+  margin-top: 40px;
+}
+
+#not-found {
+  color: rgb(255, 125, 179);
+  font-size: 40px;
+  font-family: "Secular One";
+  font-size: bolder;
+  text-align: center;
+}
+
+.parrafo-error {
+  font-family: "Secular One";
+  font-size: 25px;
+  margin: 10px 40px 20px;
+  text-align: center;
+}
+
+.boton-error {
+  font-family: "Secular One";
+  font-size: 20px;
+  background-color: rgb(255, 125, 179);
+  border: none;
+}
+.boton-error:hover {
+  background-color: rgb(255, 13, 114);
 }
 
 /*# sourceMappingURL=main.css.map */
